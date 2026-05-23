@@ -39,7 +39,7 @@ const BONUS_THRESHOLD = 5; // Auto-bonus when fouls reach 5
 // ============================================
 function playShotBuzzer() {
   try {
-    const audio = new Audio('shotclock.mp3');
+    const audio = new Audio('bellbasket.wav');
     audio.play();
   } catch (e) {
     console.log("Audio not supported or allowed.");
