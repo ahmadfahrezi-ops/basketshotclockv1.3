@@ -60,7 +60,7 @@ function playGameBuzzer() {
 
 function playTimeoutBell() {
   try {
-    const audio = new Audio('bellbasket.wav');
+    const audio = new Audio('bell.wav');
     audio.play();
   } catch (e) {
     console.log("Audio not supported or allowed.");
