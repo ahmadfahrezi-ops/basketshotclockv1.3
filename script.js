@@ -426,6 +426,9 @@ function resetFoulsTimeouts() {
 }
 
 function fullReset() {
+  if (!confirm('Are you sure you want to reset all data? This cannot be undone.')) {
+    return;
+  }
   clearInterval(G.iv);
   G.running = false;
   G.sc = { A: 0, B: 0 };
